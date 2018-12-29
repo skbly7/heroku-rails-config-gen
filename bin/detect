@@ -1,0 +1,8 @@
+#!/bin/sh
+
+if ls $1/config/*.example 1> /dev/null 2>&1; then
+    echo "Triggering configuration generator"
+    exit 0
+else
+    exit 1
+fi

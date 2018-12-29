@@ -1,0 +1,6 @@
+#!/bin/bash
+
+for i in $1/config/*.example
+do
+     cp -a $i ${i%%.example}
+done
